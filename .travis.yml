@@ -1,7 +1,10 @@
 language: python
-
 python:
   - 3.6
-
 script:
   - python doSomething.py
+after_success:
+  - ./push.sh
+env:
+  global:
+    secure: DvwDmV1U55MGuE7IDkHR/KbiDgp5gvGqsDEwNKBp//myypi8UcvkNP23eN/872SG1zAeIR+dBGC3lDonZ7VzP6vAjurv0oo25LaFmQukK4TR79F18CyNa8E2Idapto25d+17dJ+PPMu5nm3nLmt2wZuA/MHN2HFA0QR+YB7ByPA+sqZF5pLH/J+yPN/9XyWfv/ndd9wrj9EciEy6Jt9rREA5XQ1Yi6h+Tj2KYs5F6wumXIQTGJfn2h5N+lBJUrrSkfZTYBDFbk/EP+kmCiMaronIrbQNP3Hpt5PFlUpmJDhV31a0zmVWAFu7j8CPwv1B6Ral3A2Hvw06IZ2RdHBOqSPgLnxfERknduGw/d8FuVY2FKN+mbc9y4RO6xdEZby+o5cUnmVRdMouNU+X+4ypaFC+BTf9glTUoLShnjUK2zMQZAngO80DXTy+7QxmiXLAFi4l/urYmLZbOWbZYUI98sjMyJbLoqHKBjBixahzM0dI8ZBCpSalOgX+WSVn/Rv7vA+b7Mkaw8wRDP5+5s1B07ylax9K8tOibLDGHuHJeWtTTFGIyY5nX7VndGIZaREQefy702REcFUfWzAkt6TYwq7C7txS4kfvJfQt8227WR0U/fjlQ9THSioFIcVTIVBsCeVIvvwlt4F72iySRf4IC5nFCLUkotfSg5Obhhw01E0=
